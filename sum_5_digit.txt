@@ -1,0 +1,7 @@
+#!/bin/bash
+read -p "Enter the 5 digit number " num
+for((numb=$num;numb>0;numb/=10));do
+	value=$((numb%10))
+	sum=$((sum+value))
+done
+echo "$sum"

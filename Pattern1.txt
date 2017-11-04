@@ -1,0 +1,8 @@
+#!/bin/bash
+read -p "Enter the no of lines of pattern " num
+for((i=1;i<=num;i++));do
+	for((j=num-i;j>=0;j--));do
+		echo -ne  "*"
+	done
+	echo
+done

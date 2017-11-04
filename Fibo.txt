@@ -1,0 +1,11 @@
+#!/bin/bash
+read -p "Enter the length of Fibonacci Series " num
+echo " 0 "
+a=0
+b=1
+for((i=0;i<num-1;i++));do
+	a=$b
+	b=$c
+	c=$((a+b))
+	echo " $c "
+done

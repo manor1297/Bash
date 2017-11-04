@@ -1,0 +1,6 @@
+#!/bin/bash
+FILE="./books"
+/bin/cat <<EOM >$FILE
+Hey der this is a file
+EOM
+

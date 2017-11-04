@@ -1,0 +1,13 @@
+#!/bin/bash
+read -p "Enter the 5 digit number " num
+i=0;
+for((numb=$num;numb>0;numb/=10));do
+	value=$((numb%10))
+	i=$((i+1))
+	if ((i%2==0)); then
+		continue
+	else
+		digit+=$value
+	fi
+done
+echo "$digit"|rev
